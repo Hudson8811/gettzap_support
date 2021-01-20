@@ -26,10 +26,10 @@
       <main class="main">
         <div class="main-banner">
           <div class="main-banner_container">
+            <img src="img/main-banner.png" alt="" class="main-banner_bg">
             <h2>Команда профессиональных подборщиков <span class="blue-text">«Autofit»</span></h2>
             <p>Подбираем номера деталей с 2010 года</p>
             <a href="#" class="blue-btn btn">Подобрать детали</a>
-            <img src="img/main-banner.png" alt="" class="main-banner_bg">
           </div>
         </div>
 
@@ -46,7 +46,7 @@
               <div class="achievements_icon">
                 <img src="img/achievements-icon-2.svg" alt="">
               </div>
-              <p>Общение со специалистом происходит в <b>WhatsApp, Viber, Telegram</b></p>
+              <p>Общение со специалистом происходит <span class="nowrap">в <b>WhatsApp,</b></span> <b> Viber, Telegram</b></p>
             </div>
 
             <div class="achievements_item">
@@ -60,7 +60,10 @@
 
         <div class="example">
           <h3>Примеры подбора запчастей</h3>
-          <img src="img/example-banner.png" alt="" class="example_banner">
+          <picture class="example_banner">
+            <source srcset="img/example-banner-mobile.png" media="(max-width: 640px)">
+            <img src="img/example-banner.png">
+           </picture> 
         </div>
 
         <div class="instruction">

@@ -4,6 +4,10 @@ body {
   font-size: 16px;
   color: #000;
   background-color: #fff;
+
+  @include mmMax {
+    background: #f7f7f8;
+  }
 }
 
 .btn {
@@ -20,6 +24,16 @@ h2 {
   font-size: 48px;
   line-height: 135%;
   color: #ffffff;
+
+  @include mMax {
+    font-size: 40px;
+    line-height: 135%;
+  }
+
+  @include mmMax {
+    font-size: 24px;
+    line-height: 135%;
+  }
 }
 
 .blue-text {
@@ -42,6 +56,12 @@ h2 {
   box-shadow: 0px 13px 27px -6px rgba(16, 156, 241, 0.32);
   border-radius: 4px;
   text-decoration: none;
+
+  @include mmMax {
+    min-height: 41px;
+    font-size: 14px;
+    line-height: 150%;
+  }
 }
 
 .green-btn {
@@ -56,6 +76,16 @@ h3 {
   line-height: 135%;
   text-align: center;
   color: #000000;
+
+  @include mMax {
+    font-size: 26px;
+    line-height: 135%;
+  }
+
+  @include mmMax {
+    font-size: 24px;
+    line-height: 135%;
+  }
 }
 
 .container {
@@ -63,4 +93,12 @@ h3 {
   width: calc(100% - 80px);
   max-width: 1230px;
   margin: 0 auto;
+
+  @include mMax {
+    width: calc(100% - 56px);
+  }
+}
+
+.nowrap {
+  white-space: nowrap;
 }

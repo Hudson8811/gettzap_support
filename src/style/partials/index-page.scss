@@ -6,12 +6,32 @@
   padding: 260px 0 144px;
   background: #354451;
 
+  @include mMax {
+    padding: 190px 0 160px;
+  }
+
+  @include mmMax {
+    padding: 152px 0 112px;
+  }
+
   &_container {
     position: relative;
     z-index: 2;
     width: calc(100% - 80px);
     max-width: 1480px;
     margin: 0 auto;
+
+    @include dMax {
+      max-width: 1230px;
+    }
+
+    @include mMax {
+      width: calc(100% - 56px);
+    }
+
+    @include mmMax {
+      width: calc(100% - 40px);
+    }
 
     p {
       display: block;
@@ -20,16 +40,41 @@
       font-size: 18px;
       line-height: 27px;
       color: #7f86a2;
+
+      @include mMax {
+        margin-top: 12px;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      @include mmMax {
+        margin-top: 8px;
+        font-size: 14px;
+        line-height: 21px;
+      }
     }
   }
 
   h2 {
     max-width: 735px;
+
+    @include mmMax {
+      max-width: 343px;
+    }
   }
 
   .blue-btn {
     max-width: 189px;
     margin-top: 100px;
+
+    @include mMax {
+      margin-top: 70px;
+    }
+
+    @include mmMax {
+      max-width: 168px;
+      margin-top: 40px;
+    }
   }
 
   &_bg {
@@ -41,6 +86,29 @@
     width: 1603px;
     margin-top: 40px;
     transform: translateY(-50%);
+
+    @include dMax {
+      left: 631px;
+      width: 1428px;
+    }
+
+    @include tMax {
+      left: 503px;
+      width: 1139px;
+      margin-top: 60px;
+    }
+
+    @include mMax {
+      left: 370px;
+      width: 1118px;
+      margin-top: 80px;
+    }
+
+    @include mmMax {
+      left: 281px;
+      width: 795px;
+      margin-top: 50px;
+    }
   }
 }
 
@@ -52,6 +120,10 @@
   align-items: center;
   transform: translateY(-50%);
 
+  @include mmMax {
+    transform: translateY(-44px);
+  }
+
   &_catalog {
     position: absolute;
     display: flex;
@@ -59,6 +131,16 @@
     align-items: stretch;
     width: calc(100% - 80px);
     max-width: 1250px;
+
+    @include mMax {
+      width: calc(100% - 56px);
+    }
+
+    @include mmMax {
+      position: relative;
+      width: 394px;
+      display: block;
+    }
   }
 
   &_item {
@@ -84,6 +166,49 @@
         font-weight: 600;
       }
     }
+
+    @include tMax {
+      padding: 16px;
+      align-items: flex-start;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 139.4%;
+      }
+    }
+
+    @include mMax {
+      width: calc(33.333% - 32px / 3);
+      margin: 0 8px;
+
+      p {
+        font-size: 14px;
+        line-height: 139.4%;
+      }
+    }
+
+    @include mmMax {
+      width: 100%;
+      margin: 0 0 12px;
+      padding: 14px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 139.4%;
+      }
+    }
   }
 
   &_icon {
@@ -102,6 +227,30 @@
       display: block;
       max-width: 70%;
     }
+
+    @include tMax {
+      width: 32px;
+      height: 32px;
+      background: transparent;
+      border-radius: 0;
+
+      img {
+        width: 100%;
+        height: 100%;
+        max-width: none;
+      }
+    }
+
+    @include mMax {
+      display: none;
+    }
+
+    @include mmMax {
+      display: block;
+      width: 24px;
+      height: 24px;
+      margin-right: 12px;
+    }
   }
 }
 
@@ -112,11 +261,37 @@
   padding: 174px 0 100px;
   background: #f7f7f8;
 
+  @include tMax {
+    padding: 134px 0 80px;
+  }
+
+  @include mMax {
+    padding: 103px 0 40px;
+  }
+
+  @include mmMax {
+    padding: 16px 0 60px;
+  }
+
   &_banner {
     display: block;
     margin: 60px auto 0;
     width: calc(100% - 80px);
     max-width: 1110px;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    @include mMax {
+      width: calc(100% - 56px);
+      margin: 40px auto 0;
+    }
+
+    @include mmMax {
+      max-width: 293px;
+    }
   }
 }
 
@@ -127,12 +302,24 @@
   padding: 100px 0 200px;
   background-color: #fff;
 
+  @include tMax {
+    padding: 80px 0 184px;
+  }
+
+  @include mMax {
+    padding: 80px 0 144px;
+  }
+
   .container {
     max-width: 1218px;
   }
 
   &_wrapper {
     margin-top: 135px;
+
+    @include tMax {
+      margin-top: 119px;
+    }
   }
 
   &_item {
@@ -165,11 +352,24 @@
         .instruction_texts {
           margin-left: auto;
           max-width: 393px;
+
+          @include mMax {
+            max-width: 305px;
+          }
         }
 
         .instruction_number {
           left: auto;
           right: 318px;
+
+          @include mMax {
+            right: 225px;
+          }
+        }
+
+        @include tMax {
+          padding: 79px 0 71px 20px;
+          width: 61.44%;
         }
       }
 
@@ -181,6 +381,14 @@
         img {
           margin-left: -45px;
           margin-top: 40px;
+        }
+
+        @include tMax {
+          width: 38.56%;
+        }
+
+        @include mMax {
+          padding-left: 40px;
         }
       }
     }
@@ -194,7 +402,7 @@
     img {
       display: block;
       width: 198px;
-      width: calc(100% - 80px);
+      max-width: 98%;
       margin-left: auto;
     }
   }
@@ -231,12 +439,26 @@
     display: block;
     max-width: 417px;
 
+    @include mMax {
+      max-width: 305px;
+    }
+
     h4 {
       display: block;
       font-weight: 600;
       font-size: 26px;
       line-height: 135%;
       color: #000000;
+
+      @include tMax {
+        font-size: 24px;
+        line-height: 135%;
+      }
+
+      @include mMax {
+        font-size: 20px;
+        line-height: 135%;
+      }
     }
 
     p {
@@ -246,6 +468,16 @@
       font-size: 16px;
       line-height: 139.4%;
       color: #000000;
+
+      @include tMax {
+        font-size: 15px;
+        line-height: 139.4%;
+      }
+
+      @include mMax {
+        font-size: 14px;
+        line-height: 139.4%;
+      }
     }
   }
 
