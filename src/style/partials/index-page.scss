@@ -310,6 +310,10 @@
     padding: 80px 0 144px;
   }
 
+  @include mmMax {
+    padding: 60px 0 80px;
+  }
+
   .container {
     max-width: 1218px;
   }
@@ -320,6 +324,10 @@
     @include tMax {
       margin-top: 119px;
     }
+
+    @include mmMax {
+      margin-top: 60px;
+    }
   }
 
   &_item {
@@ -328,8 +336,16 @@
     justify-content: flex-start;
     align-items: stretch;
 
+    @include mmMax {
+      display: block;
+    }
+
     & + & {
       margin-top: -2px;
+
+      @include mmMax {
+        margin-top: 60px;
+      }
     }
 
     &:nth-child(3) {
@@ -356,6 +372,11 @@
           @include mMax {
             max-width: 305px;
           }
+
+          @include mmMax {
+            max-width: 498px;
+            margin-left: 0;
+          }
         }
 
         .instruction_number {
@@ -365,11 +386,23 @@
           @include mMax {
             right: 225px;
           }
+
+          @include mmMax {
+            right: auto;
+            left: 0;
+          }
         }
 
         @include tMax {
           padding: 79px 0 71px 20px;
           width: 61.44%;
+        }
+
+        @include mmMax {
+          width: 100%;
+          border: none;
+          border-radius: 0;
+          padding: 0;
         }
       }
 
@@ -381,6 +414,10 @@
         img {
           margin-left: -45px;
           margin-top: 40px;
+
+          @include mmMax {
+            margin: 0 auto;
+          }
         }
 
         @include tMax {
@@ -389,6 +426,11 @@
 
         @include mMax {
           padding-left: 40px;
+        }
+
+        @include mmMax {
+          padding: 0;
+          width: 100%;
         }
       }
     }
@@ -399,11 +441,21 @@
     width: 49.19%;
     padding-right: 100px;
 
+    @include mmMax {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 36px;
+    }
+
     img {
       display: block;
       width: 198px;
       max-width: 98%;
       margin-left: auto;
+
+      @include mmMax {
+        margin: 0 auto;
+      }
     }
   }
 
@@ -415,6 +467,13 @@
     border: 2px dashed #e3ebf2;
     border-left: 0;
     border-radius: 0 155px 155px 0;
+
+    @include mmMax {
+      width: 100%;
+      border: none;
+      border-radius: 0;
+      padding: 0;
+    }
   }
 
   &_number {
@@ -433,6 +492,14 @@
     color: #109cf1;
     background: #edf4fa;
     border-radius: 50%;
+
+    @include mmMax {
+      top: -2px;
+      width: 32px;
+      height: 32px;
+      font-size: 22px;
+      line-height: 135%;
+    }
   }
 
   &_texts {
@@ -441,6 +508,10 @@
 
     @include mMax {
       max-width: 305px;
+    }
+
+    @include mmMax {
+      max-width: 498px;
     }
 
     h4 {
@@ -458,6 +529,10 @@
       @include mMax {
         font-size: 20px;
         line-height: 135%;
+      }
+
+      @include mmMax {
+        padding-left: 42px;
       }
     }
 
@@ -486,6 +561,12 @@
       max-width: 189px;
       margin: 0 auto;
       transform: translateY(-50%);
+
+      @include mmMax {
+        transform: none;
+        max-width: 168px;
+        margin-top: 40px;
+      }
     }
   }
 }
