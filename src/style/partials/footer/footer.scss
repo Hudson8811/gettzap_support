@@ -1,0 +1,47 @@
+.footer {
+  position: relative;
+  box-sizing: border-box;
+  padding: 32px 0 29px;
+  background: #222222;
+
+  &_disclaimer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 150%;
+      color: #ffffff;
+    }
+
+    &-line {
+      display: block;
+      width: 1px;
+      height: 16px;
+      background: #707683;
+      margin: 0 10px;
+    }
+  }
+
+  &_pays {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+
+    li {
+      display: block;
+      margin: 0 10px;
+
+      a {
+        display: block;
+
+        img {
+          display: block;
+        }
+      }
+    }
+  }
+}

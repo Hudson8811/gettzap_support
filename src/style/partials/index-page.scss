@@ -1,0 +1,259 @@
+.main-banner {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 260px 0 144px;
+  background: #354451;
+
+  &_container {
+    position: relative;
+    z-index: 2;
+    width: calc(100% - 80px);
+    max-width: 1480px;
+    margin: 0 auto;
+
+    p {
+      display: block;
+      margin-top: 16px;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 27px;
+      color: #7f86a2;
+    }
+  }
+
+  h2 {
+    max-width: 735px;
+  }
+
+  .blue-btn {
+    max-width: 189px;
+    margin-top: 100px;
+  }
+
+  &_bg {
+    position: absolute;
+    top: 50%;
+    left: 686px;
+    z-index: 1;
+    display: block;
+    width: 1603px;
+    margin-top: 40px;
+    transform: translateY(-50%);
+  }
+}
+
+.achievements {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-50%);
+
+  &_catalog {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: calc(100% - 80px);
+    max-width: 1250px;
+  }
+
+  &_item {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: calc(33.333% - 40px / 3);
+    padding: 20px;
+    margin: 0 10px;
+    background: #ffffff;
+    box-shadow: 0px 60px 120px -10px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+
+    p {
+      display: block;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 139.4%;
+      color: #000000;
+
+      b {
+        font-weight: 600;
+      }
+    }
+  }
+
+  &_icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 78px;
+    width: 78px;
+    margin-right: 14px;
+    flex-shrink: 0;
+    background: #edf4fa;
+    border-radius: 50%;
+
+    img {
+      display: block;
+      max-width: 70%;
+    }
+  }
+}
+
+.example {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 174px 0 100px;
+  background: #f7f7f8;
+
+  &_banner {
+    display: block;
+    margin: 60px auto 0;
+    width: calc(100% - 80px);
+    max-width: 1110px;
+  }
+}
+
+.instruction {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 100px 0 200px;
+  background-color: #fff;
+
+  .container {
+    max-width: 1218px;
+  }
+
+  &_wrapper {
+    margin-top: 135px;
+  }
+
+  &_item {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    & + & {
+      margin-top: -2px;
+    }
+
+    &:nth-child(3) {
+      .instruction_icon {
+        img {
+          margin-top: 63px;
+        }
+      }
+    }
+
+    &:nth-child(even) {
+      .instruction_content {
+        order: -1;
+        border: 2px dashed #e3ebf2;
+        border-radius: 155px 0 0 155px;
+        padding: 79px 0 44px 20px;
+        border-right: 0;
+        width: 49%;
+
+        .instruction_texts {
+          margin-left: auto;
+          max-width: 393px;
+        }
+
+        .instruction_number {
+          left: auto;
+          right: 318px;
+        }
+      }
+
+      .instruction_icon {
+        padding-left: 100px;
+        padding-right: 0;
+        width: 51%;
+
+        img {
+          margin-left: -45px;
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+
+  &_icon {
+    box-sizing: border-box;
+    width: 49.19%;
+    padding-right: 100px;
+
+    img {
+      display: block;
+      width: 198px;
+      width: calc(100% - 80px);
+      margin-left: auto;
+    }
+  }
+
+  &_content {
+    position: relative;
+    box-sizing: border-box;
+    width: 50.81%;
+    padding: 79px 20px 71px 0;
+    border: 2px dashed #e3ebf2;
+    border-left: 0;
+    border-radius: 0 155px 155px 0;
+  }
+
+  &_number {
+    position: absolute;
+    left: 0;
+    top: -39px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 78px;
+    height: 78px;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 135%;
+    color: #109cf1;
+    background: #edf4fa;
+    border-radius: 50%;
+  }
+
+  &_texts {
+    display: block;
+    max-width: 417px;
+
+    h4 {
+      display: block;
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 135%;
+      color: #000000;
+    }
+
+    p {
+      display: block;
+      margin-top: 16px;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 139.4%;
+      color: #000000;
+    }
+  }
+
+  &_btn {
+    .green-btn {
+      max-width: 189px;
+      margin: 0 auto;
+      transform: translateY(-50%);
+    }
+  }
+}
