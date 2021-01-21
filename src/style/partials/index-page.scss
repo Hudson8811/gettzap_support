@@ -14,6 +14,10 @@
     padding: 152px 0 112px;
   }
 
+  @include msMax {
+    padding: 387px 0 107px;
+  }
+
   &_container {
     position: relative;
     z-index: 2;
@@ -75,6 +79,10 @@
       max-width: 168px;
       margin-top: 40px;
     }
+
+    @include msMax {
+      max-width: none;
+    }
   }
 
   &_bg {
@@ -109,6 +117,12 @@
       width: 795px;
       margin-top: 50px;
     }
+
+    @include msMax {
+      left: 0;
+      top: 0;
+      transform: translateY(-92%);
+    }
   }
 }
 
@@ -140,6 +154,10 @@
       position: relative;
       width: 394px;
       display: block;
+    }
+
+    @include msMax {
+      width: 280px;
     }
   }
 
@@ -566,6 +584,10 @@
         transform: none;
         max-width: 168px;
         margin-top: 40px;
+      }
+
+      @include msMax {
+        max-width: none;
       }
     }
   }

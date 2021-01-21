@@ -1,23 +1,29 @@
 @mixin dMax {
-  @media (max-width: 1440px) {
+  @media (max-width: 1540px) {
     @content;
   }
 }
 
 @mixin tMax {
-  @media (max-width: 1024px) {
+  @media (max-width: 1124px) {
     @content;
   }
 }
 
 @mixin mMax {
-  @media (max-width: 768px) {
+  @media (max-width: 868px) {
     @content;
   }
 }
 
 @mixin mmMax {
-  @media (max-width: 640px) {
+  @media (max-width: 740px) {
+    @content;
+  }
+}
+
+@mixin msMax {
+  @media (max-width: 420px) {
     @content;
   }
 }
