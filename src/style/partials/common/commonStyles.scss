@@ -57,6 +57,7 @@ h2 {
   box-shadow: 0px 13px 27px -6px rgba(16, 156, 241, 0.32);
   border-radius: 4px;
   text-decoration: none;
+  letter-spacing: 0.5px;
 
   @include mmMax {
     min-height: 41px;
